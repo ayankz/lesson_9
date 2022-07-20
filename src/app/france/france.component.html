@@ -1,0 +1,2 @@
+<h2 *ngIf="this.capital !== ''">{{this.capital}} is capital of France</h2>
+<app-detail [data]="data" (getCapital)="print($event)"></app-detail>

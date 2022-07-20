@@ -1,0 +1,8 @@
+<div class="wrapper" [class]="this.data.title === 'France' ? 'red' : 'blue'">
+  <h1 >{{this.data.title}}</h1>
+  <img [src]="'assets/'+data.icon+'.png'" alt="">
+  <span *ngIf="this.data.title === 'France'">Part of EU</span>
+  <span>Population:{{data.population}}</span>
+  <button *ngIf="this.data.title=== 'France'" (click)="sendCapital()">SEND</button>
+</div>
+
